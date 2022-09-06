@@ -5,7 +5,7 @@ provider "azurerm" {
 ## Create Resource Group
 #######################################################################
 
-resource "azurerm_resource_group" "vwan-aiden-spoke-rg" {
+resource "azurerm_resource_group" "vwan-microhack-spoke-rg" {
   name     = "vwan-microhack-spoke-rg"
   location = var.location-spoke-1
  tags = {
@@ -15,7 +15,7 @@ resource "azurerm_resource_group" "vwan-aiden-spoke-rg" {
   }
 }
 
-resource "azurerm_resource_group" "vwan-aiden-hub-rg" {
+resource "azurerm_resource_group" "vwan-microhack-hub-rg" {
   name     = "vwan-microhack-hub-rg"
   location = var.location-vwan
  tags = {
